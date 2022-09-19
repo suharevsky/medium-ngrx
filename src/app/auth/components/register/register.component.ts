@@ -29,7 +29,7 @@ export class RegisterComponent implements OnInit {
 
 
     onSubmit() {
-        this.store.dispatch(registerAction(this.form.value) );
+        this.store.dispatch(registerAction(this.form.value));
         console.log(this.form.valid)
     }
 }
