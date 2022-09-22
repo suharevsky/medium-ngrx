@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'https://angular.productionready.io/api'
+  apiUrl: 'https://conduit.productionready.io/api'
 };
 
 /*
