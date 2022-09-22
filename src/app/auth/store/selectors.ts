@@ -6,5 +6,5 @@ export const authFeatureSelector = createFeatureSelector<AppStateInterface, Auth
 
 export const isSubmittedSelector = createSelector(
     authFeatureSelector, 
-    (authState: AuthStateInterface) => authState.isSubmiting 
+    (authState: AuthStateInterface) => authState.isSubmitting 
 )
