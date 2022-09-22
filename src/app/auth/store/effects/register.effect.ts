@@ -10,7 +10,6 @@ import { registerAction, registerFailureAction, registerSuccessAction } from "..
 export class RegisterEffect {
     register$ = createEffect(() => this.actions$.pipe(
         ofType(registerAction),
-            //@ts-ignore
         switchMap(({ request }) => {
             return this.authService.register(request).pipe(
                 map((currentUser: CurrentUserInterface) => {
