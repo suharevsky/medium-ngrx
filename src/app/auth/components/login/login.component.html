@@ -4,9 +4,8 @@
       <div class="col-md-6 offset-md-3 col-xs-12">
         <h1 class="text-xs-center">Sign In</h1>
         <p class="xs-center">
-          <a [routerLink]="['/login']">Have an account?</a>
+          <a [routerLink]="['/register']">Need an account?</a>
         </p>
-        Backend errors are here
         <mc-backend-error-messages
           *ngIf="backendErrors$ | async"
           [backendErrors]="backendErrors$ | async"
@@ -14,14 +13,6 @@
         <form [formGroup]="form" (ngSubmit)="onSubmit()">
           <fieldset>
             <fieldset class="form-group">
-              <fieldset class="form-group">
-                <input
-                  type="username"
-                  class="form-control form-control-lg"
-                  placeholder="Username"
-                  formControlName="username"
-                />
-              </fieldset>
               <input
                 type="email"
                 class="form-control form-control-lg"
@@ -42,7 +33,7 @@
               class="btn btn-lg btn-primary pull-xs-right"
               type="submit"
             >
-              Sign Up
+              Sign In
             </button>
           </fieldset>
         </form>
