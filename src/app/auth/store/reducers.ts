@@ -1,4 +1,3 @@
-import { state } from "@angular/animations";
 import { Action, createReducer, on } from "@ngrx/store";
 import { AuthStateInterface } from "../types/authState.interface";
 import { loginAction, loginFailureAction, loginSuccessAction } from "./actions/login.action";
