@@ -9,6 +9,7 @@ import { environment } from 'src/environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
+import { GlobalFeedModule } from './globalFeed/globalFeed.module';
 import { TopBarModule } from './shared/modules/topBar/topBar.module';
 import { AuthInterceptor } from './shared/services/AuthInterceptor.service';
 import { PersistanceService } from './shared/services/presistance.service';
@@ -29,6 +30,7 @@ import { PersistanceService } from './shared/services/presistance.service';
       logOnly: environment.production, // Restrict extension to log-only mode
     }),
     TopBarModule,
+    GlobalFeedModule
   ],
   providers: [
     PersistanceService, 
