@@ -1,5 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
+import { RouterModule } from "@angular/router";
 import { EffectsModule } from "@ngrx/effects";
 import { StoreModule } from "@ngrx/store";
 import { FeedComponent } from "./components/globalFeed/feed.component";
@@ -10,7 +11,7 @@ import { reducers } from "./store/reducers";
 
 
 @NgModule({
-    imports: [CommonModule, EffectsModule.forFeature([GetFeedEffect]), StoreModule.forFeature('feed', reducers)],
+    imports: [CommonModule, EffectsModule.forFeature([GetFeedEffect]), StoreModule.forFeature('feed', reducers), RouterModule],
     declarations: [FeedComponent],
     exports: [FeedComponent],
     providers: [FeedService]
